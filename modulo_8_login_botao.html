@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+
+Login<input/><br>
+Senha<input/><br>
+<button>Confirmar</button>
+<script>
+
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function imprimir(mensagem) {
+        document.write(mensagem);
+        pularLinha();
+    }
+    function analisar (){
+
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ){
+        tentativas()
+    }
+    }
+
+    function tentativas (){
+    
+    for(var tentativaAtual = 1; tentativaAtual <= 3; tentativaAtual++ ){
+
+    var loginInformado = document.querySelector("input");
+    input.focus();
+    
+    var senhaInformada = document.querySelector("input");
+    input.focus();
+
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        imprimir("Bem-vindo ao sistema, " + loginInformado);
+
+   
+        tentativaAtual = 3; 
+
+    } else {
+
+        if (tentativaAtual == 3) {
+            alert("Número permitido de tentativas ultrapassado!");
+
+        } else {
+            alert("Login inválido. Tente novamente");
+            
+
+        }
+        
+    }
+  
+}
+}
+    var loginCadastrado = "ramon";
+    var senhaCadastrada = "123";
+    var loginInformado = document.querySelector("input");
+    input.focus();
+
+    var senhaInformada = document.querySelector("input");
+    input.focus();
+
+    var button = document.querySelector("button");  
+    button.onclick = tentativas;
+
+    
+
+
+</script>

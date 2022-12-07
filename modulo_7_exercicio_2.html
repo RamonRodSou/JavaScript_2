@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+// imprimir em ordem decrescente todos os números entre 20 e 0, 
+// incluindo os limites! No final, escreva a palavra "FIM".
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 20;
+
+    while( contador >= 0) {
+
+      mostra(contador);
+      contador = contador - 1;
+    }
+
+    mostra("FIM");
+</script>

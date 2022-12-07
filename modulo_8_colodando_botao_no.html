@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<button>Clique-me</button>
+
+<script>
+
+    //Veja que no mundo HTML conseguimos criar o botão por meio da 
+    //TAG <button> e no mundo JavaScript temos a função tchau.
+    //Precisamos utilizar uma função para ligar o botão. 
+    //Com essa ligação, toda vez que clicarmos no botão a função 
+    //tchau ela será chamada e o alerta será exibido para o usuário.
+
+
+
+    function tchau() {
+
+        alert("Tchau!!!!!")
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = tchau;
+
+</script>
