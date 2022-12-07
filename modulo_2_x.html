@@ -1,0 +1,45 @@
+<canvas width="600" height="600"></canvas>
+
+<script>
+
+    function quadradinho(eixoX, eixoY, tamanhoX, tamanhoY, cor){
+
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(eixoX, eixoY, tamanhoX,tamanhoY);
+        pincel.fillStyle = cor;
+        pincel.fillRect (eixoX ,eixoY , tamanhoX, tamanhoY);
+        
+    }
+    
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext("2d");
+        pincel.fillStyle = "lightgrey";
+        pincel.fillRect (0 ,0 , 600, 600);
+
+        var y = 0 ;
+        var x = 600 ;
+
+     while (y < 600){
+
+        x = x - 50;
+        quadradinho( x , y ,50, 50, "blue");
+        y = y + 50;
+
+            for(var xY = 0; xY < 600; xY = xY + 50){
+                quadradinho( xY , xY ,50, 50, "red");
+
+                if (xY == 300){
+
+                    quadradinho(250, 250, 50, 50,"blue");
+                    quadradinho(300, 300, 50, 50,"blue");
+                }    
+             }
+            
+        if (x == 250){
+
+            quadradinho(300,250, 50, 50, "red");
+            quadradinho(250,300, 50, 50, "red");
+        }
+     }
+
+</script>
