@@ -1,0 +1,62 @@
+<head>
+<canvas width="600" height="400" charset="UTF-8"></canvas>
+
+<br><br></head>
+<body></body>
+
+<script>
+
+/*
+A idéia para resolver essa questão do alvo foi o seguinte: fazer o circulo maior e ir diminuindo a cada rodada do While,
+aproveitei e joguei as 2 condições em apenas um while.
+
+*/
+
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function circulo (cor, raio){
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(300, 200, raio, 0, 2 * Math.PI);
+        pincel.fill();
+
+    }
+
+    function condicao(cor1, cor2) {
+
+        var raio = 110;
+        var raio2 = 100;
+
+        while ( raio > 0 && raio2 > -10){
+
+            circulo(cor1, raio);
+            circulo(cor2, raio2);
+
+            raio = raio - 20;
+            raio2 = raio2 - 20;
+
+        }
+    }
+
+    function acerto (evento){
+
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+
+            if  ((x > 290) && (x < 310) && (y > 190) && (y < 210)) {
+                  
+                alert("100 Pontos " + x + " " + y);
+
+            }
+    }
+
+    condicao("red", "white");
+    tela.onclick = acerto;
+
+</script>
