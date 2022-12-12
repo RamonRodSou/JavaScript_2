@@ -1,26 +1,22 @@
-<head>
-<canvas width="620" height="620" charset="UTF-8"></canvas>
-<body></body>
-</head>
+<canvas width="600" height="400"></canvas>
 
 <script>
 
     var tela = document.querySelector('canvas');
     var pincel = tela.getContext('2d');
-    pincel.fillStyle = 'black';
-    pincel.fillRect(0, 0, 620, 620);
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
 
-    var x = 22;
-    var y = 22;
+    var x = 20;
+    var y = 20;
 
     // códigos do teclado
 
-    var esquerda = 37;
-    var cima = 38;
-    var direita = 39;
-    var baixo = 40;
+    var esquerda = 37
+    var cima = 38
+    var direita = 39
+    var baixo = 40
 
-    // taxa de incremento
     var taxa = 10;
 
     function desenhaCirculo(x, y, raio) {
@@ -33,37 +29,38 @@
 
     function limpaTela() {
 
-        pincel.clearRect(10, 10, 600, 600);
+        pincel.clearRect(0, 0, 600, 400);
     }
+
 
     function atualizaTela() {
 
-limpaTela();
-desenhaCirculo(x, y, 40);
-}
+        limpaTela();
+        desenhaCirculo(x, y, 10);
+    }
 
-setInterval(atualizaTela, 20);
+    setInterval(atualizaTela, 20);
 
-function leDoTeclado(evento) {
+    function leDoTeclado(evento) {
 
-if(evento.keyCode == cima) {
-    
-    y = y - taxa;
+        if(evento.keyCode == cima) {
 
-} else if (evento.keyCode == baixo) {
+            y = y - taxa;
 
-    y = y + taxa;
+        } else if (evento.keyCode == baixo) {
 
-} else if (evento.keyCode == esquerda) {
+            y = y + taxa;
 
-    x = x - taxa;
+        } else if (evento.keyCode == esquerda) {
 
-} else if (evento.keyCode == direita) {
+            x = x - taxa;
 
-    x = x + taxa;
-}
-}
+        } else if (evento.keyCode == direita) {
 
-document.onkeydown = leDoTeclado;
+            x = x + taxa;
+        }
+    }
+
+   document.onkeydown = leDoTeclado;
 
 </script>
