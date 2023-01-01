@@ -42,10 +42,12 @@ var tela = document.querySelector('canvas');
         pincel.arc(x, y, raio, 0, 2 * Math.PI);
         pincel.fill();
     }
+    desenhaCirculo(300,200, raio + 60, 'red');   // 50
+    desenhaCirculo(300,200, raio + 50, 'white'); //    40
     desenhaCirculo(300,200, raio + 40, 'red');   // 50
     desenhaCirculo(300,200, raio + 30, 'white'); //    40
     desenhaCirculo(300,200, raio + 20, 'red');   // 30
-    desenhaCirculo(300,200, raio + 10, 'white');     20
+    desenhaCirculo(300,200, raio + 10, 'white'); //    20
     desenhaCirculo(300,200, raio, 'red');        // 10 
 
     function dispara(evento) {
