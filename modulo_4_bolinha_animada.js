@@ -1,11 +1,4 @@
-<head>
-<canvas width="600" height="400" charset="UTF-8"></canvas>
-<body></body>
-</head>
-
-<script>
-
-    function circulo (x, y, raio){
+  function circulo (x, y, raio){
 
         pincel.fillStyle = "blue";
         pincel.beginPath();
@@ -36,5 +29,3 @@
     }
 
     setInterval(atualizaTela, 10);
-
-</script>

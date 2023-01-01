@@ -1,6 +1,3 @@
-<canvas width="600" height="400"></canvas>
-
-<script>
 
 /*
 Para isso, foi necessário associar a função desenhaCirculo ao evento onclick da nossa tela. 
@@ -81,8 +78,3 @@ está sendo pressionada, se for false, é porque não foi.
 
         tela.onclick = desenhaCirculo;
         tela.oncontextmenu = mudaCor;
-
-        
-    
-
-</script>

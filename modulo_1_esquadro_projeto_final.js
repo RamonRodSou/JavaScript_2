@@ -1,6 +1,4 @@
-<canvas width="600" height="400"></canvas>
 
-<script>
     /*
     Nesse tipo de triângulo, basta saber os pontos A e C para descobrir o B! 
     Repare que o X do A também é o X do B, e o Y do C também é o Y do B. 
@@ -29,7 +27,7 @@
     var pincel = tela.getContext("2d");
 
         pincel.fillStyle = "lightgrey";
-        pincel.fillRect(0,0,600,400);
+        pincel.fillRect(0,0,600,600);
 
 
     function triangulo(aB, bC, aX, cX, cor){
@@ -46,7 +44,3 @@
 
     triangulo(50, 400, 50, 400, "black");
     triangulo(100, 350, 175, 275, "white");
-
-
-
-</script>

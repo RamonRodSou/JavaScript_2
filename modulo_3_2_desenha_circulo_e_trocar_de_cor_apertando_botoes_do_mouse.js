@@ -1,6 +1,4 @@
-<canvas width="600" height="400"></canvas>
 
-<script>
 /*
 
 O desafio agora é o seguinte. Se andarmos com o ponteiro do mouse sobre a tela enquanto o 
@@ -107,5 +105,3 @@ uma só vez.
     
     tela.oncontextmenu = mudaCor;
 
-
-</script>

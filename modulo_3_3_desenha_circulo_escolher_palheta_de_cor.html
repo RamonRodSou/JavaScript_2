@@ -1,51 +1,14 @@
-<canvas width="600" height="400"></canvas>
-<big> Escolha uma cor </big> <input type="color">
-<script>
-/*
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" >
 
-O que achou do exercício que permitia desenhar na tela? Você percebeu que só conseguimos desenhar
- na cor azul? Que tal o usuário poder escolher de uma paleta a cor que desejar?
-
-Primeiro, vamos ao código que permite o desenho com o mouse:
-*/
-
-
-    var tela = document.querySelector('canvas');
-    var pincel = tela.getContext('2d');
-    var cores = document.querySelector("input");
+    <canvas width="600" height="600"></canvas>
+    <br> <input type="color">
     
-    pincel.fillStyle = 'grey';
-    pincel.fillRect(0, 0, 600, 400);
-
-    var desenha = false;
-
-    function desenhaCirculo(evento) {
-
-        if (desenha) {
-            var x = evento.pageX - tela.offsetLeft;
-            var y = evento.pageY - tela.offsetTop;
-            pincel.fillStyle = cores.value;
-            pincel.beginPath();
-            pincel.arc(x, y, 10, 0, 2 * 3.14);
-            pincel.fill();
-        }
-
-            console.log(x + ',' + y);
-
-    }
-
-    tela.onmousemove = desenhaCirculo;
-
-    function habilitaDesenhar() {
-            desenha = true;
-    }   
-
-    function desabilitaDesenhar() {
-        desenha = false;
-    }
-
-    tela.onmousedown = habilitaDesenhar;
-    tela.onmouseup = desabilitaDesenhar;
-
-
-</script>
+    <title>Logica 2 - Pratique</title>
+</head>
+<body>
+    <script src="modulo_3_3_desenha_circulo_escolher_palheta_de_cor.js"> </script>
+</body>
+</html>

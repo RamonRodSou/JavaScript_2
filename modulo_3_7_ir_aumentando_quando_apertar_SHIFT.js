@@ -1,6 +1,4 @@
-<canvas width="600" height="400"></canvas>
 
-<script>
 /*
 
 Teste o código para lembrar o resultado. Quero propor uma mudança nesse código que é a 
@@ -72,8 +70,3 @@ Analise os requisitos do projeto e assinale a alternativa que mais se aproxima d
 
             tela.onclick = desenhaCirculo;
             tela.oncontextmenu = mudaCor;
-
-        
-    
-
-</script>

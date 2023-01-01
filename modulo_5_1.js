@@ -1,8 +1,3 @@
-<meta charset="UTF-8">
-
-<canvas width="600" height="400"></canvas>
-
-<script>
 
     function desenhaQuadrado(x, y, tamanho, cor) {
 
@@ -106,5 +101,3 @@ function selecionaCor(evento) {
     tela.onmouseup = desabilitaDesenhar;
 
     tela.onclick = selecionaCor;
-
-</script>

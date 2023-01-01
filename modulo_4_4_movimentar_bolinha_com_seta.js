@@ -1,6 +1,3 @@
-<canvas width="600" height="400"></canvas>
-
-<script>
 
     var tela = document.querySelector('canvas');
     var pincel = tela.getContext('2d');
@@ -62,5 +59,3 @@
     }
 
    document.onkeydown = leDoTeclado;
-
-</script>

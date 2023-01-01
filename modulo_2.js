@@ -1,8 +1,4 @@
-<canvas width="600" height="600"></canvas>
-
-<script>
-
-    function quadrado(x, y, cor){
+ function quadrado(x, y, cor){
 
         pincel.fillStyle = cor;
         pincel.fillRect(x, y, 50, 50);
@@ -49,5 +45,3 @@
             quadradinho(250,300, 50, 50);
         }
      }
-
-</script>

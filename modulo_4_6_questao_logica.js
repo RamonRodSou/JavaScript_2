@@ -1,11 +1,4 @@
-<head>
-<canvas width="900" height="600" charset="UTF-8"></canvas>
-<body></body>
-</head>
-
-<script>
-
-/*Para ser aprovada em um teste de emprego, uma pessoa foi submetida ao seguinte teste de lógica:
+*Para ser aprovada em um teste de emprego, uma pessoa foi submetida ao seguinte teste de lógica:
 
 **  A saída do console será 50.
 
@@ -22,5 +15,3 @@ if (b.length > 7) {
 } else {
     console.log(a + c)
 }
-  
-</script>

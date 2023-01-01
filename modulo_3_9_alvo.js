@@ -1,12 +1,3 @@
-<head>
-<canvas width="600" height="400" charset="UTF-8"></canvas>
-
-<br><br>
-
-</head>
-<body></body>
-
-<script>
 
 /*
 Muito bem. O desafio desse exercício é exibir um alerta toda vez que um clique do mouse for realizado no centro do alvo. 
@@ -65,6 +56,3 @@ var tela = document.querySelector('canvas');
     }
 
     tela.onclick = dispara;
-
-
-</script>

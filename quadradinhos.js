@@ -1,7 +1,4 @@
-<canvas width="600" height="400"></canvas>
-
-<script>
-
+    
     var tela = document.querySelector ('canvas');
     var pincel = tela.getContext('2d');
 
@@ -33,6 +30,3 @@
         desenharQuadrado (x, 100, 50, 50, 'yellow');
 
      }
-  
-
-</script>

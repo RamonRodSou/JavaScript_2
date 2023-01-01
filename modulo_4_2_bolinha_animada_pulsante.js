@@ -1,9 +1,4 @@
-<head>
-<canvas width="600" height="600" charset="UTF-8"></canvas>
-<body></body>
-</head>
 
-<script>
 /*
     Sua tarefa será fazer uma bolinha pulsar, ou seja, seu raio deve ter tamanho mínimo de 20 e 
     tamanho máximo de 30. Sendo assim, de 20 até 30, o raio deve ser incrementado de um em um e 
@@ -53,5 +48,3 @@
   }4
 
   setInterval(atualizaTela, 20);
-
-</script>

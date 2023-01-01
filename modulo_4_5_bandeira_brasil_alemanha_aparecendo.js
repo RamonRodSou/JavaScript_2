@@ -1,9 +1,3 @@
-<head>
-<canvas width="900" height="600" charset="UTF-8"></canvas>
-<body></body>
-</head>
-
-<script>
 
     var tela = document.querySelector ("canvas");
     var pincel = tela.getContext("2d");
@@ -85,4 +79,3 @@
 
 setInterval(trocaBandeira, 2000); // a cada 2 segundos, chama trocaBandeira 
   
-</script>

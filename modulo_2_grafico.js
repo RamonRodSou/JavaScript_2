@@ -1,6 +1,3 @@
-<canvas width="600" height="400"></canvas>
-
-<script>
 
     function desenhaRetangulo(x, y, largura, altura, cor) {
         var tela = document.querySelector('canvas');
@@ -39,5 +36,3 @@
 
     desenhaBarra(50, 50, serie2015, cores, '2015');
     desenhaBarra(150, 50, serie2016, cores, '2016');
-
-</script>
